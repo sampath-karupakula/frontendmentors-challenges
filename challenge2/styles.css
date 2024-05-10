@@ -1,0 +1,105 @@
+@font-face {
+    font-family: Figtree-Italic-VariableFont_wght;
+    src: url(assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Figtree-VariableFont_wght;
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+:root {
+    background-color:  hsl(47, 88%, 63%);
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family:  Figtree-VariableFont_wght;
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.course-card {
+    background-color: hsl(0, 0%, 100%);
+    width: 20.4rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid hsl(0, 0%, 7%);
+    box-shadow: 10px 10px 5px hsl(0, 0%, 7%);
+
+}
+
+.course__img > img{
+    width: 20.5rem;
+    padding: 0;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.category {
+    margin: 2rem;
+}
+
+.category-item {
+    font-size: .7rem;
+    font-weight: 900;
+    background-color: hsl(47, 88%, 63%);
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+}
+
+.date {
+    padding: 1.5rem 0 0 0;
+    font-size: .7rem;
+    font-weight: bold;
+}
+
+.course__title {
+    font-weight: 800;
+}
+.course__title:hover {
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+
+.course__description {
+    font-size: .9rem;
+    color: hsl(0, 0%, 50%);
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    margin: 2rem 0 0 0;
+}
+
+.avatar img {
+    width: 2rem;
+}
+
+.title {
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+/*
+- Yellow: hsl(47, 88%, 63%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Grey: hsl(0, 0%, 50%)
+- Black: hsl(0, 0%, 7%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+*/
