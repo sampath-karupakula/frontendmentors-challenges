@@ -1,0 +1,142 @@
+@font-face {
+    font-family: InterFont;
+    src: url(assets/fonts/Inter-VariableFont_slnt,wght.ttf);
+}
+
+:root {
+
+    /*color variables*/
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+
+    font-family: InterFont;
+    font-size: 14px;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--Off-Black);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--White);
+    border: 1px solid red;
+}
+
+.container {
+    width: 23.3rem;
+    height: 41.2rem;
+    background-color: var(--Dark-Grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.profile {
+    margin: 1.5rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profile__pic {
+    border-radius: 50%;
+    width: 6rem;
+    margin: 1rem;
+}
+
+.profile__details {
+    margin: .8rem 0 2rem 0;
+}
+
+.profile__title {
+    padding-bottom: .8rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.profile__location {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--Green);
+}
+
+.profile__bio {
+    font-weight: 300;
+    font-size: 1rem;
+    color: var(--White);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: center;
+    gap: 1rem;
+    width: 18rem;
+    padding: 0;
+    margin-left: 1.8rem;
+}
+
+.link__item {
+    background-color: var(--Grey);
+    padding: 1rem;
+    font-weight: 600;
+    width: 100%;
+    border-radius: .5rem;
+}
+
+@media  (min-width: 1440px) {
+    .container {
+        width: 27.5rem;
+        height: 43.64rem;
+    }
+}
+
+
+
+/*- Mobile: 375px
+- Desktop: 1440px
+
+> 💡 These are just the design sizes. Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens.
+
+## Colors
+
+### Primary
+
+- Green: hsl(75, 94%, 57%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Grey: hsl(0, 0%, 20%)
+- Dark Grey: hsl(0, 0%, 12%)
+- Off Black: hsl(0, 0%, 8%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 14px
+
+### Font
+
+- Family: [Inter](https://fonts.google.com/specimen/Inter)
+- Weights: 400, 600, 700*/
